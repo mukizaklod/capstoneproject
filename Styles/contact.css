@@ -1,0 +1,152 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'poppins' ,sans-serif;
+
+}
+body{
+   /* background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('');*/
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+
+}
+
+
+.container{
+    padding: 60px 60px 0 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.container .logo{
+    background: rgb(2, 2, 2);
+    color: #fff;
+    padding: 10px 22px;
+}
+.container .logo a{
+    text-decoration: none;
+    background: rgb(2, 2, 2);
+    color:#fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 100%;
+
+}
+
+.container .nav .items{
+    display: flex;
+}
+.container .nav .items li{
+padding-right: 20px;
+}
+.container .nav .items li a{
+    text-decoration: none;
+    color:#B8B8B8;
+    font-size: 16px;
+    opacity: 1;
+}
+.container .nav .items li a::hover{
+color: #fff;
+}
+
+.login-box{
+    width: 280px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    color: #111;
+}
+.login-box h1{
+    
+    font-size: 40px;
+    border-bottom: 3px solid #009688;
+    margin-bottom: 40px;
+    padding: 5px 0;
+}
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #009688;
+     
+}
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: #111;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+.btn{
+   width: 100%;
+   background-color: #009688;
+   border: 2px solid #009688;
+   color: #111;
+   padding: 5px;
+   font-size: 18px;
+   font-weight: bold;
+   cursor: pointer;
+
+}
+#footer{
+    width: 100%;
+    position: absolute;;
+    top: 85%;
+    height: 2%;
+    padding: 100px 0 20px;
+    background: #efefef;
+    
+   
+    
+}
+.social{
+    text-align: center;
+    
+}
+.social .fa{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #009688;
+    margin: 40px 5px 0;
+    color: #009688;
+    cursor: pointer;
+    transform: .5s;
+}
+.social .fa ::hover{
+    background: #009688;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+
+@media only screen and (max-width: 767px){
+.container{
+    padding: 30px 30px 0 30px;
+}
+.container .logo{
+    padding: 6x 13px;
+}
+.container .logo a{
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.container .nav .items li a{
+    opacity: 1;
+}
+}
