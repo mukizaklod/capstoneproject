@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/blog.css">
+    <title>Blog</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo">Travel</a>
+        <a href="../index.html" class="nav">Home</a>
+        <a href="../Pages/blog.html" class="nav" active>Blog</a>
+        <a href="../Pages/login.html" class="nav">Login</a>
+        <!--div class="toggle"><img src="toogle.png" alt=""></div-->
+    </header>
+    <div class="banner">
+        <video src="../Assets/ Rwanda - The Land of a Thousand Hills.mp4" muted autoplay loop type="mp4"></video>
+        <div class="textbox">
+            <h2>Wonderfull Rwanda</h2>
+            <p id="visible">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Omnis inventore magni et earum,
+                 perspiciatis labore a cum rerum iste voluptatibus est nulla 
+                 neque odit debitis dolorem perferendis harum ipsa eligendi.</p>
+                 <p id="hide" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis inventore magni et earum,
+                    perspiciatis labore a cum rerum iste voluptatibus est nulla 
+                    neque odit debitis dolorem perferendis harum ipsa eligendi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis inventore magni et earum,
+                    perspiciatis labore a cum rerum iste voluptatibus est nulla 
+                    neque odit debitis dolorem perferendis harum ipsa eligendi.</p>
+                 <button id="read">Read More</button>
+        </div>
+        <div class="videobox">
+            <video src="../Assets/Visit Rwanda - The Land of a Thousand Hills.mp4" muted autoplay loop type="mp4"></video>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="../Assets/facebook.png" ></a></li>
+            <li><a href="#"><img src="../Assets/twitter.png" ></a></li>
+            <li><a href="#"><img src="../Assets/instagram.png" ></a></li>
+        </ul>
+    </div>
+        <script>
+            function DisplayText(){
+
+                document.getElementById('read').onclick =
+                document.getElementById('visible').innerHTML+document.getElementById('hide').css('display','block') ; 
+            }
+           
+        </script>
+</body>
+</html>
